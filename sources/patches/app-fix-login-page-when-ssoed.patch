@@ -1,6 +1,6 @@
 diff -ruN roundcube.orig/index.php roundcube/index.php
---- roundcube.orig/index.php	2021-04-26 14:48:33.169655413 +0200
-+++ roundcube/index.php	2021-04-26 14:54:07.594479133 +0200
+--- myddleware.orig/index.php	2021-04-26 14:48:33.169655413 +0200
++++ myddleware/index.php	2021-04-26 14:54:07.594479133 +0200
 @@ -210,6 +210,10 @@
      if (!$RCMAIL->session->check_auth()) {
          $RCMAIL->kill_session();
