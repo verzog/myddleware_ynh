@@ -3,7 +3,7 @@
 packaging_format = 2
 
 id = "Myddleware"
-name = "Myddlewaree"
+name = "Myddleware"
 description.en = "Open Source connector"
 description.fr = "connector Open Source"
 
@@ -33,7 +33,7 @@ ram.runtime = "50M"
 
     [install.path]
     type = "path"
-    default = "/webmail"
+    default = "/myddleware"
 
     [install.init_main_permission]
     type = "group"
