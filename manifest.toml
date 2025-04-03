@@ -2,20 +2,20 @@
 
 packaging_format = 2
 
-id = "roundcube"
-name = "Roundcube"
-description.en = "Open Source Webmail software"
-description.fr = "Webmail Open Source"
+id = "Myddleware"
+name = "Myddlewaree"
+description.en = "Open Source connector"
+description.fr = "connector Open Source"
 
-version = "1.6.10~ynh1"
+version = "1.0.0~ynh1"
 maintainers = []
 
 [upstream]
 license = "GPL-3.0-only"
-website = "https://roundcube.net/"
-demo = "https://demo.yunohost.org/webmail/"
-admindoc = "https://github.com/roundcube/roundcubemail/wiki"
-code = "https://github.com/roundcube/roundcubemail"
+website = "https://github.com/Myddleware/myddleware"
+demo = "none"
+admindoc = "https://myddleware.github.io/myddleware/#/"
+code = "https://github.com/Myddleware/myddleware"
 
 [integration]
 yunohost = ">= 11.2.29"
@@ -43,21 +43,15 @@ ram.runtime = "50M"
     ask.en = "Choose the application language"
     ask.fr = "Choisissez la langue de l'application"
     type = "select"
-    choices = ["de_DE", "en_GB", "fr_FR", "it_IT"]
+    choices = [ "en_GB", "fr_FR", "it_IT"]
     default = "en_GB"
-
-    [install.with_carddav]
-    ask.en = "Install CardDAV synchronization plugin?"
-    ask.fr = "Installer le plugin de synchronisation CardDAV ?"
-    type = "boolean"
-    default = false
-
+  
 [resources]
     [resources.sources.main]
-    url = "https://github.com/roundcube/roundcubemail/releases/download/1.6.10/roundcubemail-1.6.10.tar.gz"
-    sha256 = "63f47ded363063c59a47031c1e3aca7e1df89254e7ce9dced699cdbfadd9d39f"
+ SOURCE_URL=https://github.com/Myddleware/myddleware/archive/refs/tags/v4.0.2.tar.gz
+SOURCE_SUM=0c9ae6437a0a27b2ac2a3a1f5fa8196dbcff3b6764880af3669d22ed7a5fd36f
     autoupdate.strategy = "latest_github_release"
-    autoupdate.asset = "roundcubemail-\\d+\\.\\d+\\.\\d+\\.tar\\.gz$"
+    autoupdate.asset = "Myddleware-\\d+\\.\\d+\\.\\d+\\.tar\\.gz$"
 
     [resources.system_user]
 
@@ -82,4 +76,4 @@ ram.runtime = "50M"
     ]
 
     [resources.database]
-    type = "mysql"
+    type = "mariadb"
