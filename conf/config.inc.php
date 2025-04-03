@@ -2,7 +2,7 @@
 
 /*
  +-----------------------------------------------------------------------+
- | Local configuration for the Roundcube Webmail installation.           |
+ | Local configuration for the myddleware installation.           |
  |                                                                       |
  | This is a sample configuration file only containing the minimum       |
  | setup required for a functional installation. Copy more options       |
@@ -134,7 +134,7 @@ $config['ldap_public']['yunohost'] = array(
 $config['plugins'] = array(
     'archive',
     'zipdownload',
-    // additionnal plugins
+    // additional plugins
     'http_authentication',
     'managesieve',
     'markasjunk',
