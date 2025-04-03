@@ -76,4 +76,4 @@ SOURCE_SUM="0c9ae6437a0a27b2ac2a3a1f5fa8196dbcff3b6764880af3669d22ed7a5fd36f"
     ]
 
     [resources.database]
-    type = "mariadb"
+    type = "mysql"
